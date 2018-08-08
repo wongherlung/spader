@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="spader",
-    version="0.0.1",
+    version="0.0.2",
     author="wongherlung",
     author_email="wongherlung@gmail.com",
     description="A Single Page Application endpoint crawler.",
@@ -13,9 +13,12 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/wongherlung/spader",
     packages=setuptools.find_packages(),
-    classifiers=(
+    classifiers=[
         "Programming Language :: Python :: 2.7",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
-    ),
+    ],
 )
+
+# NOTE: To upload a new version of spader
+# python setup.py sdist bdist_egg upload
